@@ -319,7 +319,7 @@ dl, ol, ul {
     display: flex;
     justify-content: end;
     align-items: flex-end;
-    background-image: url(img/grimrin_bg6.png);
+    background-image: url(img/grimrin_bg.png);
     background-size: cover;
     border-radius: 24px;
     width: 100%;
@@ -340,7 +340,7 @@ dl, ol, ul {
 }
 
 .server-info__icon {
-    height: 90px;
+    height: 94px;
     border-radius: 100px;
     border: 3.5px solid #3b3e4a;
     background-color: #3b3e4a;
@@ -477,8 +477,9 @@ article iframe:last-child {
 }
 
 .article-heading {
-    border-bottom: 3px solid rgb(40 40 55 / 40%);
+    border-bottom: 3px solid rgb(40 44 55 / 40%);
     margin-bottom: 16px;
+    padding-bottom: 18px;
 }
 
 .article-heading-h1 {

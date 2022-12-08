@@ -49,6 +49,13 @@ dl, ol, ul {
     margin: 0;
 }
 
+hr {
+    border-color: #5a5c6b !important;
+    border-top: 2px dashed;
+    margin: 1.25rem 0;
+    opacity: 1;
+}
+
 .body-container {
     display: flex;
     margin: 2rem auto;
@@ -478,22 +485,23 @@ article iframe:last-child {
 
 .article-heading {
     border-bottom: 3px solid rgb(40 44 55 / 40%);
-    margin-bottom: 16px;
-    padding-bottom: 18px;
+    border-bottom: 2.5px solid rgb(40 46 55 / 45%);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .article-heading-h1 {
-    color: rgb(229 232 239 / 90%);
+    color: rgb(229 232 239 / 80%);
     font-size: 18px;
-    font-weight: 600;
-    letter-spacing: .35px;
+    font-weight: 500;
+    letter-spacing: .6px;
     margin-top: 0;
     padding-bottom: 10px;
 }
 
 .article-heading-h2 {
-    color: rgb(229 232 239 / 35%);
-    font-size: 14px;
+    color: rgb(229 232 239 / 40%);
+    font-size: 13.5px;
     letter-spacing: .35px;
     margin-top: 0;
 }
@@ -504,12 +512,12 @@ article iframe:last-child {
     letter-spacing: .35px;
     font-size: 14px;
     font-weight: 500;
-    color: rgb(229 232 239 / 90%);
+    color: rgb(229 232 239 / 80%);
 }
 
 .articles p,
 .articles li {
-    color: rgb(189 194 211 / 85%);
+    color: rgb(189 194 211 / 80%);
     line-height: 1.7;
     font-size: 13.5px;
 }
@@ -534,6 +542,12 @@ article iframe:last-child {
     font-weight: 400;
 } 
 
+.articles iframe {
+    width: 100%;
+    height: 280px;
+    opacity: .8;
+}
+
 .collapse-content {
     background-color: #3c3e4a;
     color: rgb(189 194 211 / 80%);
@@ -545,26 +559,22 @@ article iframe:last-child {
     padding: 1.25rem;
 }
 
-.articles iframe {
-    width: 100%;
-    opacity: .75;
-}
 
 /* 🔺 ------ article highlights ------ */
 /*-- highlight white --*/
 .articles .hw {
     background-color: #535562;
     border-radius: 12px;
-    padding: 1rem 1.25rem;
     margin: 1.5rem 0;
+    padding: 1.25rem 1.5rem;
 }
 
 /*-- highlight black --*/
 .articles .hb {
     background-color: rgb(54 56 66 / 60%);
     border-radius: 12px;
-    padding: 1rem 1.25rem;
     margin: 1.5rem 0;
+    padding: 1.25rem 1.5rem;
 }
 
 /*-- highlight outline white --*/
@@ -572,7 +582,13 @@ article iframe:last-child {
     border: 2px solid rgb(115 121 140 / 45%);
     border-radius: 12px;
     margin: 1.5rem 0;
-    padding: 1rem 1.25rem;
+    padding: 1.25rem 1.5rem;
+}
+
+.articles .hw p:last-child,
+.articles .hb p:last-child,
+.articles .how p:last-child {
+    margin-bottom: 0;
 }
 
 /* 🔺 ------ server sidebar ------ */
